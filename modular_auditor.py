@@ -11,6 +11,9 @@ def get_valid_input():
         return None
     return quantity
 
+def process_delivery(current_inventory, quantity):
+    return current_inventory + quantity
+
 inventory = 0
 failedEntries = 0
 deliveriesProcessed = 0
@@ -22,7 +25,7 @@ while True:
     elif quantity == None:
         failedEntries += 1
         continue
-    inventory += quantity
+    inventory = process_delivery(inventory, quantity)
     deliveriesProcessed += 1
     print("Accepted. Current total inventory: " + str(inventory))
     if inventory > 500:
