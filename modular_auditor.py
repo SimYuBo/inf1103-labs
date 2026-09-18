@@ -11,8 +11,8 @@ def get_valid_input():
         return None
     return quantity
 
-def process_delivery(current_inventory, quantity):
-    return current_inventory + quantity
+def process_delivery(current_total, new_value):
+    return current_total + new_value
 
 inventory = 0
 failedEntries = 0
