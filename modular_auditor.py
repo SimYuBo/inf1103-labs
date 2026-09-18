@@ -1,8 +1,8 @@
 def get_valid_input():
     userInput = input("Enter stock quantity (or 'quit' to finish): ").strip()
     if userInput.lower() == "quit":
-        return None
-    if not userInput.isdigit():
+        return "quit"
+    elif not userInput.isdigit():
         print("Error: '" + userInput + "' is not a valid whole number. Please try again.")
         return None
     quantity = int(userInput)
@@ -15,7 +15,10 @@ inventory = 0
 failedEntries = 0
 while True:
     quantity = get_valid_input()
-    if quantity is None:
+    if quantity == "quit":
+        print("\nQuitting...")
+        break
+    elif quantity == None:
         failedEntries += 1
         continue
     inventory += quantity
