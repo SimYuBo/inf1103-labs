@@ -13,6 +13,7 @@ def get_valid_input():
 
 inventory = 0
 failedEntries = 0
+deliveriesProcessed = 0
 while True:
     quantity = get_valid_input()
     if quantity == "quit":
@@ -22,6 +23,7 @@ while True:
         failedEntries += 1
         continue
     inventory += quantity
+    deliveriesProcessed += 1
     print("Accepted. Current total inventory: " + str(inventory))
     if inventory > 500:
         print("ALERT: Overstock detected! Total inventory (" + str(inventory) + ") exceeds 500 units.")
@@ -32,5 +34,5 @@ while True:
         pass
 
 print("\n--- Inventory Audit Report ---")
-print("Total Units Processed: " + str(inventory))
+print("Total Deliveries Processed: " + str(deliveriesProcessed))
 print("Number of Failed/Rejected Entries: " + str(failedEntries))
