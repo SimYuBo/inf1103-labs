@@ -14,6 +14,9 @@ def get_valid_input():
 def process_delivery(current_total, new_value):
     return current_total + new_value
 
+def calculate_tax(amount):
+    return amount * 0.10
+
 inventory = 0
 failedEntries = 0
 deliveriesProcessed = 0
@@ -26,8 +29,9 @@ while True:
         failedEntries += 1
         continue
     inventory = process_delivery(inventory, quantity)
+    tax = calculate_tax(quantity)
     deliveriesProcessed += 1
-    print("Accepted. Current total inventory: " + str(inventory))
+    print("Accepted. Current total inventory: " + str(inventory) + ", Tax: " + str(tax))
     if inventory > 500:
         print("ALERT: Overstock detected! Total inventory (" + str(inventory) + ") exceeds 500 units.")
         break
