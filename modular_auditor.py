@@ -17,6 +17,11 @@ def process_delivery(current_total, new_value):
 def calculate_tax(amount):
     return amount * 0.10
 
+def generate_report(total_units, failed_attempts):
+    print("\n--- Inventory Audit Report ---")
+    print("Total Deliveries Processed: " + str(total_units))
+    print("Number of Failed/Rejected Entries: " + str(failed_attempts))
+
 inventory = 0
 failedEntries = 0
 deliveriesProcessed = 0
@@ -40,6 +45,4 @@ while True:
     else:
         pass
 
-print("\n--- Inventory Audit Report ---")
-print("Total Deliveries Processed: " + str(deliveriesProcessed))
-print("Number of Failed/Rejected Entries: " + str(failedEntries))
+generate_report(deliveriesProcessed, failedEntries)
