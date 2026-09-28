@@ -1,6 +1,18 @@
+# Global constants
 MAX_CAPACITY = 500
 TAX_RATE = 0.10
 INVENTORY_FILE = "inventory.txt"
+
+# Inventory item structure
+ITEM_FIELDS = {
+    "id": 0,
+    "name": 1,
+    "quantity": 2,
+    "transaction_history": 3
+}
+
+FIELD_SEPARATOR = ","
+HISTORY_SEPARATOR = "|"
 
 def get_valid_input():
     userInput = input("Enter stock quantity (or 'quit' to finish): ").strip()
@@ -27,16 +39,33 @@ def generate_report(total_units, failed_attempts):
     print("Number of Failed/Rejected Entries: " + str(failed_attempts))
 
 def load_inventory():
+    inventory = []
+    transaction_history = {}
     try:
-        with open(INVENTORY_FILE, "r") as file:
-            return int(file.read().strip())
+        with open(INVENTORY_FILE, "r") as f:
+            lines = f.read().splitlines()
     except FileNotFoundError:
-        return 0
-    except ValueError:
-        print("Error: Inventory file is corrupted. Starting with 0 inventory.")
-        return 0
+        return inventory, transaction_history
 
-inventory = load_inventory()
+    for line in lines:
+        if not line.strip():
+            continue
+        parts = line.split(FIELD_SEPARATOR)
+        if len(parts) != len(ITEM_FIELDS):
+            continue
+        try:
+            item_id = int(parts[ITEM_FIELDS["id"]])
+            name = parts[ITEM_FIELDS["name"]]
+            quantity = int(parts[ITEM_FIELDS["quantity"]])
+            history = [int(x) for x in parts[ITEM_FIELDS["transaction_history"]].split(HISTORY_SEPARATOR) if x]
+        except ValueError:
+            continue
+        inventory.append([item_id, name, quantity])
+        transaction_history[item_id] = history
+
+    return inventory, transaction_history
+
+inventory, transaction_history = load_inventory()
 failedEntries = 0
 deliveriesProcessed = 0
 while True:
