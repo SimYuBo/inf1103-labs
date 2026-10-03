@@ -49,10 +49,10 @@ def update_stock(inventory):
     if item is None:
         print(f"Error: Product ID '{item_id}' not found.")
         return
-    
+
+    print(f"Current stock for '{item['name']}': {item['stock']}")
     new_stock = int(input(f"Enter new stock quantity for '{item['name']}': "))
     item['stock'] = new_stock
-    inventory.append(item)
     print(f"Stock for '{item['name']}' updated to {new_stock} successfully.")
     return inventory
 
@@ -66,8 +66,8 @@ def search_product(inventory):
         print(f"Error: Product ID '{item_id}' not found.")
         return
 
-    print("Product Found:\n------------------\n")
-    print(f"ID: {item['id']} | Name: {item['name']} | Price: ${item['price']:.2f} | Stock: {item['stock']}")
+    print("Product Found:\n------------------")
+    print(f"ID: {item['id']}\nName: {item['name']}\nPrice: ${item['price']:.2f}\nStock: {item['stock']}")
     print("------------------")
 
 def main():
@@ -77,7 +77,7 @@ def main():
     inventory = load_inventory()
     
     while True:
-        print("----------MENU----------")
+        print("\n----------MENU----------")
         print("1. Display All Products")
         print("2. Add New Product")
         print("3. Update Stock")
@@ -91,10 +91,8 @@ def main():
             display_all(inventory)
         elif choice == '2':
             inventory = add_product(inventory)
-            save_inventory(inventory)
         elif choice == '3':
             inventory = update_stock(inventory)
-            save_inventory(inventory)
         elif choice == '4':
             search_product(inventory)
         elif choice == '5':
