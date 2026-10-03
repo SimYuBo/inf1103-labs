@@ -9,7 +9,9 @@ def load_inventory():
 
 def save_inventory(inventory):
     with open(INVENTORY_FILE, "w") as f:
+        print("Saving inventory to file...")
         json.dump(inventory, f, indent=4)
+        print("Inventory saved successfully.")
 
 def display_all(inventory):
     print("\nCurrent Inventory")
@@ -52,3 +54,17 @@ def update_stock(inventory):
     inventory.append(item)
     print(f"Stock for '{item['name']}' updated to {new_stock} successfully.")
     return inventory
+
+def search_product(inventory):
+    print("\nSearch Product")
+    print("-----------------")
+    item_id = input("Enter product ID to search: ")
+    item = next((item for item in inventory if item['id'] == item_id), None)
+    
+    if item is None:
+        print(f"Error: Product ID '{item_id}' not found.")
+        return
+
+    print("Product Found:\n------------------\n")
+    print(f"ID: {item['id']} | Name: {item['name']} | Price: ${item['price']:.2f} | Stock: {item['stock']}")
+    print("------------------")
