@@ -5,6 +5,7 @@ INVENTORY_FILE = "inventory.json"
 def load_inventory():
     with open(INVENTORY_FILE, "r") as f:
         inventory = json.load(f)
+        print("Inventory loaded successfully.")
     return inventory
 
 def save_inventory(inventory):
@@ -68,3 +69,42 @@ def search_product(inventory):
     print("Product Found:\n------------------\n")
     print(f"ID: {item['id']} | Name: {item['name']} | Price: ${item['price']:.2f} | Stock: {item['stock']}")
     print("------------------")
+
+def main():
+    print("========================")
+    print("Inventory Management System")
+    print("========================")
+    inventory = load_inventory()
+    
+    while True:
+        print("----------MENU----------")
+        print("1. Display All Products")
+        print("2. Add New Product")
+        print("3. Update Stock")
+        print("4. Search Product")
+        print("5. Save inventory")
+        print("6. Exit")
+        
+        choice = input("Enter your choice (1-6): ")
+        
+        if choice == '1':
+            display_all(inventory)
+        elif choice == '2':
+            inventory = add_product(inventory)
+            save_inventory(inventory)
+        elif choice == '3':
+            inventory = update_stock(inventory)
+            save_inventory(inventory)
+        elif choice == '4':
+            search_product(inventory)
+        elif choice == '5':
+            save_inventory(inventory)
+        elif choice == '6':
+            print("Saving inventory before exiting...")
+            save_inventory(inventory)
+            print("Thank you for using Inventory Management System.\nProgram terminated.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+main()
