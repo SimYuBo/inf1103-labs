@@ -1,0 +1,106 @@
+commit ab1850a6716a052e5b13ddb5d93b9b5be84f4c43 (HEAD -> master, origin/master, origin/HEAD)
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 17:52:12 2026 +0800
+
+    Updated Inventory json
+
+commit 2eec9beec66502525f27130cb5b8834e7c6535c3
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 17:39:49 2026 +0800
+
+    Bug fixes and UI updates
+:
+commit ab1850a6716a052e5b13ddb5d93b9b5be84f4c43 (HEAD -> master, origin/master, origin/HEAD)
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 17:52:12 2026 +0800
+
+    Updated Inventory json
+
+commit 2eec9beec66502525f27130cb5b8834e7c6535c3
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 17:39:49 2026 +0800
+
+    Bug fixes and UI updates
+
+commit 27f0a8aed35d61c83d0f8802a3071ec00b2095f3
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 15:52:35 2026 +0800
+
+    Main function
+
+commit 85a625dfe909046de98bad7c61c4e409c78d8d34
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 15:30:41 2026 +0800
+
+    Search product function
+
+commit de46205aa0ace0a88cd4a867a423b8b5c813006f
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 15:21:42 2026 +0800
+
+:
+commit ab1850a6716a052e5b13ddb5d93b9b5be84f4c43 (HEAD -> master, origin/master, origin/HEAD)
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 17:52:12 2026 +0800
+
+    Updated Inventory json
+
+commit 2eec9beec66502525f27130cb5b8834e7c6535c3
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 17:39:49 2026 +0800
+
+    Bug fixes and UI updates
+
+commit 27f0a8aed35d61c83d0f8802a3071ec00b2095f3
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 15:52:35 2026 +0800
+
+    Main function
+
+commit 85a625dfe909046de98bad7c61c4e409c78d8d34
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 15:30:41 2026 +0800
+
+    Search product function
+
+commit de46205aa0ace0a88cd4a867a423b8b5c813006f
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 15:21:42 2026 +0800
+
+    Remove save function from functions
+
+commit 8fada376c12fd0caf2954318a489b526dd456b78
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 15:15:47 2026 +0800
+
+    Update stock function
+
+commit bed86a04e3cb5fea98f0241a28fcbb4046985a84
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 15:10:31 2026 +0800
+
+    Add product function
+
+commit 3aafc311451abc23247b3aca752436d9ebb2b567
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 15:08:18 2026 +0800
+
+    Display all function
+
+commit a14483b646ac2f64b93be0be321773110a0a87a7
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 14:57:38 2026 +0800
+
+    Save inventory function
+
+commit 91e53e83c7263f068f4bdfe3f930454b32933423
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Oct 3 14:57:17 2026 +0800
+
+    Load inventory function
+
+commit f44638db285b5cdcf536e0ab85d934fa25dcc21d
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Oct 2 15:38:53 2026 +0800
+
+    Lab5 inital commit

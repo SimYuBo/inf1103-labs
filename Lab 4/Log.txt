@@ -1,0 +1,30 @@
+PS C:\Users\bobof\Desktop\Class Materials\Trimester 1\INF1103 - Programming Fundamentals with DevOps\INF1103-Labs> git log
+commit 4b5211fed65e574f6b6357bd2ed27e7b0ef19cf3 (HEAD -> master)
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Wed Sep 30 14:56:11 2026 +0800
+
+    inventory text file
+
+commit c36d4ef629fe7edf0a3bc7fef7c23371eee1f68e
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Wed Sep 30 14:52:22 2026 +0800
+
+    Save and find function
+
+commit 485456f00ef4375a455a237b62b3dbea89dff4a5
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Tue Sep 29 02:19:49 2026 +0800
+
+    Load inventory function_fix
+
+commit 70d56efe0d270eedcbf5a2980ed7ab0b1a4005c4
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Sep 25 14:35:25 2026 +0800
+
+    Load inventory function
+
+commit 9965341dc6d35c964bcd43356c5a8ebaccece33e
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Sep 25 14:17:23 2026 +0800
+
+    lab4 inital commit

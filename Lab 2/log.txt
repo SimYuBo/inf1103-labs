@@ -1,0 +1,6 @@
+PS C:\Users\bobof\Desktop\Class Materials\Trimester 1\INF1103 - Programming Fundamentals with DevOps\INF1103-Labs> git log
+commit a5e4a87bcb956c585738bce6f0bf2f485a08473d (HEAD -> master, origin/master, origin/HEAD)
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Sep 12 18:42:15 2026 +0800
+
+    Auditor

@@ -1,0 +1,57 @@
+PS C:\Users\bobof\Desktop\Class Materials\Trimester 1\INF1103 - Programming Fundamentals with DevOps\INF1103-Labs> git log
+commit 2a2994208b905579f55d514ff1d829d4e2974123 (HEAD -> master, origin/master, origin/HEAD)
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sun Sep 20 13:21:22 2026 +0800
+
+    Generate report function
+
+commit f36ce430d346fe0e0ec3842aa41b242fa2e1dce1
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+:
+commit 2a2994208b905579f55d514ff1d829d4e2974123 (HEAD -> master, origin/master, origin/HEAD)
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sun Sep 20 13:21:22 2026 +0800
+
+    Generate report function
+
+commit f36ce430d346fe0e0ec3842aa41b242fa2e1dce1
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sun Sep 20 13:19:17 2026 +0800
+
+    Calculate tax function
+
+commit 3625f4e307278e5d952b5e9e7c647bd3455a4755
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Sep 18 16:40:38 2026 +0800
+
+    Process delivery_fix
+
+commit 88717e42488a699a556def1985087ffe721c83a4
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Sep 18 15:14:33 2026 +0800
+
+    Process delivery
+
+commit 9121543ba0b345270a63066a92d15170a6d89984
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Sep 18 15:08:32 2026 +0800
+
+    Deliveries processed
+
+commit 49ba883a49cb12e5b1a0bf825ac70e1737ba018c
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Sep 18 14:19:52 2026 +0800
+
+    Input validation function_fix
+
+commit b347e1fbe32f6fb136c133073d4b6acf7017b497
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Sep 18 14:10:52 2026 +0800
+
+    Input validation function
+
+commit 4b82997a9ccd0540ee8520a576a6e8b49bdde256
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Sep 18 13:56:25 2026 +0800
+
+    lab3 inital commit

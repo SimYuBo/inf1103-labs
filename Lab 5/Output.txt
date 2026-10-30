@@ -1,0 +1,129 @@
+========================
+Inventory Management System
+========================
+Inventory loaded successfully.
+
+----------MENU----------
+1. Display All Products
+2. Add New Product
+3. Update Stock
+4. Search Product
+5. Save inventory
+6. Exit
+Enter your choice (1-6): 1
+
+Current Inventory
+-----------------
+ID: P001 | Name: Laptop | Price: $1200.00 | Stock: 15
+ID: P002 | Name: Mouse | Price: $25.50 | Stock: 40
+ID: P003 | Name: Keyboard | Price: $75.00 | Stock: 25
+-----------------
+
+----------MENU----------
+1. Display All Products
+2. Add New Product
+3. Update Stock
+4. Search Product
+5. Save inventory
+6. Exit
+Enter your choice (1-6): 2
+
+Add New Product
+-----------------
+Enter product ID: P004
+Enter name: Monitor
+Enter price: 299.99
+Enter stock quantity: 10
+Product 'Monitor' added successfully.
+
+----------MENU----------
+1. Display All Products
+2. Add New Product
+3. Update Stock
+4. Search Product
+5. Save inventory
+6. Exit
+Enter your choice (1-6): 1
+
+Current Inventory
+-----------------
+ID: P001 | Name: Laptop | Price: $1200.00 | Stock: 15
+ID: P002 | Name: Mouse | Price: $25.50 | Stock: 40
+ID: P003 | Name: Keyboard | Price: $75.00 | Stock: 25
+ID: P004 | Name: Monitor | Price: $299.99 | Stock: 10
+-----------------
+
+----------MENU----------
+1. Display All Products
+2. Add New Product
+3. Update Stock
+4. Search Product
+5. Save inventory
+6. Exit
+Enter your choice (1-6): 3
+
+Update Stock
+-----------------
+Enter product ID to update: P002
+Current stock for 'Mouse': 40
+Enter new stock quantity for 'Mouse': 50
+Stock for 'Mouse' updated to 50 successfully.
+
+----------MENU----------
+1. Display All Products
+2. Add New Product
+3. Update Stock
+4. Search Product
+5. Save inventory
+6. Exit
+Enter your choice (1-6): 4
+
+Search Product
+-----------------
+Enter product ID to search: P004
+Product Found:
+------------------
+ID: P004
+Name: Monitor
+Price: $299.99
+Stock: 10
+------------------
+
+----------MENU----------
+1. Display All Products
+2. Add New Product
+3. Update Stock
+4. Search Product
+5. Save inventory
+6. Exit
+Enter your choice (1-6): 5
+Saving inventory to file...
+Inventory saved successfully.
+
+----------MENU----------
+1. Display All Products
+2. Add New Product
+3. Update Stock
+4. Search Product
+5. Save inventory
+6. Exit
+Enter your choice (1-6): 4
+
+Search Product
+-----------------
+Enter product ID to search: P999
+Error: Product ID 'P999' not found.
+
+----------MENU----------
+1. Display All Products
+2. Add New Product
+3. Update Stock
+4. Search Product
+5. Save inventory
+6. Exit
+Enter your choice (1-6): 6
+Saving inventory before exiting...
+Saving inventory to file...
+Inventory saved successfully.
+Thank you for using Inventory Management System.
+Program terminated.                                                                                                
