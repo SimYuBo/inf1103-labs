@@ -1,18 +1,42 @@
 import json
+from product import Product
 
 INVENTORY_FILE = "inventory.json"
 
-def load_inventory():
-    with open(INVENTORY_FILE, "r") as f:
-        inventory = json.load(f)
-        print("Inventory loaded successfully.")
-    return inventory
+class Inventory:
+    def __init__(self):
+        self.inventory = []
 
-def save_inventory(inventory):
-    with open(INVENTORY_FILE, "w") as f:
-        print("Saving inventory to file...")
-        json.dump(inventory, f, indent=4)
-        print("Inventory saved successfully.")
+    def add_product(self, product):
+        new_item = {
+            "id": product.id,
+            "name": product.name,
+            "price": product.price,
+            "stock": product.stock
+        }
+        self.inventory.append(new_item)
+        print(f"Product '{product.name}' added successfully.")
+
+inventory = Inventory() # creating the inventory object from the Inventory class 
+product1 = Product("P001", "Laptop", 1200.00, 15) # creating product from Product class, via init 
+product2 = Product("P002", "Mouse", 25.50, 40) 
+inventory.add_product(product1) # pass the product to inventory class to store in a list 
+inventory.add_product(product2)
+
+class FileHandling:
+    @staticmethod
+    def load_inventory():
+        with open(INVENTORY_FILE, "r") as f:
+            inventory = json.load(f)
+            print("Inventory loaded successfully.")
+        return inventory
+
+    @staticmethod
+    def save_inventory(inventory):
+        with open(INVENTORY_FILE, "w") as f:
+            print("Saving inventory to file...")
+            json.dump(inventory, f, indent=4)
+            print("Inventory saved successfully.")
 
 def display_all(inventory):
     print("\nCurrent Inventory")
@@ -105,4 +129,5 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 
-main()
+if __name__ == "__main__":
+    main()
