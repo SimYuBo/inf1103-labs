@@ -1,0 +1,23 @@
+commit b9f157355900fa693e44367184c066f2220b818f (HEAD -> master, origin/master, origin/HEAD)                                                                        
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Oct 30 21:50:58 2026 +0800
+
+    Final commit
+
+commit 5163e1f05f86890fc115f2bab9bf88e482995d16
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Oct 30 21:14:26 2026 +0800
+
+    Main classes
+
+commit 4e081f99ad6e74745db725d097d9e92f7823dc72
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Oct 30 15:04:18 2026 +0800
+
+    Product class
+
+commit f93ba1685d1fd178c5561350f6fd6f549a9e4255
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Oct 30 14:30:46 2026 +0800
+
+    Lab 6 Initial commit
