@@ -8,3 +8,6 @@ class DigitalProduct(Product):
     def display_info(self):
         super().display_info()
         print(f"Download Size: {self.download_size} MB")
+
+    def get_fulfillment_info(self) -> dict:
+        return "Digital Product: Can be downloaded directly from the website."
