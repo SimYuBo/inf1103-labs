@@ -1,17 +1,18 @@
 import json
 
-class FileHandling:
-    INVENTORY_FILE = "inventory.json"
-    def __init__(self, file_path: str = INVENTORY_FILE):
-        self._file_path = file_path
+INVENTORY_FILE = "inventory.json"
 
-    def load_inventory(self):
+class FileHandling:
+    def __init__(self):
+        self._file_path = INVENTORY_FILE
+
+    def load_inventory(self) -> list[dict]:
         with open(self._file_path, "r") as f:
             inventory = json.load(f)
             print("Inventory loaded successfully.")
         return inventory
 
-    def save_inventory(self, data):
+    def save_inventory(self, data) -> None:
         print("Saving inventory to file...")
         with open(self._file_path, "w") as f:
             json.dump(data, f, indent=4)

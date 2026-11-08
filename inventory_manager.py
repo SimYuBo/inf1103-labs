@@ -1,12 +1,14 @@
+from file_handling import FileHandling
 from product import Product
 from inventory import Inventory
-from file_handling import FileHandling, INVENTORY_FILE
+from physical_product import PhysicalProduct
+from digital_product import DigitalProduct
+from can_be_shipped import CanBeShipped
 
 class Main:
     def __init__(self):
-        self._file = INVENTORY_FILE
         self._inventory = Inventory()
-        self._file_handler = FileHandling(self._file)
+        self._file_handler = FileHandling()
         self._inventory.load_records(self._file_handler.load_inventory())
 
     @staticmethod
@@ -34,31 +36,43 @@ class Main:
     @staticmethod
     def _show_product(product: Product) -> None:
         print("Product Found:\n------------------")
-        print(f"ID: {product.get_product_id()}")
-        print(f"Name: {product.get_name()}")
-        print(f"Price: ${product.get_price():.2f}")
-        print(f"Stock: {product.get_stock()}")
+        product.display_info()
+        print(product.get_fulfillment_info())
+        if isinstance(product, CanBeShipped):
+            print(f"Shipping Cost: ${product.calculate_shipping_cost():.2f}")
         print("------------------")
  
     def _display_all(self) -> None:
         print("\nCurrent Inventory")
         print("-----------------")
         for p in self._inventory.display_all():
-            print(
-                f"ID: {p.get_product_id()} | Name: {p.get_name()} | "
-                f"Price: ${p.get_price():.2f} | Stock: {p.get_stock()}"
-            )
-        print("-----------------")
+            p.display_info()
+            print("-----------------")
 
     def _add_product(self) -> None:
         print("\nAdd New Product")
         print("-----------------")
+        print("Choose product type:")
+        print("1. Physical Product")
+        print("2. Digital Product")
+        while True:
+            product_type = input("Enter your choice (1 or 2): ")
+            if product_type in ("1", "2"):
+                break
+            print("Invalid choice. Please enter 1 or 2.")
         product_id = input("Enter product ID: ")
         name = input("Enter name: ")
         price = self._read_non_negative_float("Enter price: ")
         stock = self._read_non_negative_int("Enter stock quantity: ")
+        if product_type == "1":
+            weight = self._read_non_negative_float("Enter weight (kg): ")
+            product = PhysicalProduct(product_id, name, price, stock, weight)
+        else:
+            download_size = self._read_non_negative_float("Enter download size (MB): ")
+            product = DigitalProduct(product_id, name, price, stock, download_size)
+        
         try:
-            self._inventory.add_product(Product(product_id, name, price, stock))
+            self._inventory.add_product(product)
             print(f"Product '{name}' added successfully.")
         except ValueError as e:
             print(f"Error: {e}")
@@ -119,12 +133,6 @@ class Main:
                 break
             else:
                 print("Invalid choice. Please try again.")
-    
-inventory = Inventory() # creating the inventory object from the Inventory class 
-product1 = Product("P001", "Laptop", 1200.00, 15) # creating product from Product class, via init 
-product2 = Product("P002", "Mouse", 25.50, 40) 
-inventory.add_product(product1) # pass the product to inventory class to store in a list 
-inventory.add_product(product2)
 
 if __name__ == "__main__":
     Main().run()

@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-
+from copy import copy as shallow_copy
 
 class Product(ABC):
     def __init__(self, product_id: str, name: str, price: float, stock: int):
@@ -24,7 +24,7 @@ class Product(ABC):
         self._stock = quantity
 
     def copy(self) -> "Product":
-        return Product(self._id, self._name, self._price, self._stock)
+        return shallow_copy(self)
 
     def display_info(self):
         print(f"Product ID: {self._id}")
@@ -34,7 +34,7 @@ class Product(ABC):
 
     def to_record(self) -> dict:
         return {
-            "product_id": self._id,
+            "id": self._id,
             "name": self._name,
             "price": self._price,
             "stock": self._stock

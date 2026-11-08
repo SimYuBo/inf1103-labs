@@ -1,10 +1,12 @@
 from product import Product
+from physical_product import PhysicalProduct
+from digital_product import DigitalProduct
 
 class Inventory:
     def __init__(self):
         self._products: dict[str, Product] = {}
 
-    def add_product(self, product) -> None:
+    def add_product(self, product: Product) -> None:
         product_id = product.get_product_id()
         if product_id in self._products:
             raise ValueError(f"Product ID '{product_id}' already exists.")
@@ -27,23 +29,20 @@ class Inventory:
         return tuple(product.copy() for product in self._products.values())
 
     def to_records(self) -> list[dict]:
-        return [
-            {
-                "id": product.get_product_id(),
-                "name": product.get_name(),
-                "price": product.get_price(),
-                "stock": product.get_stock()
-            }
-            for product in self._products.values()
-        ]
+        return [product.to_record() for product in self._products.values()]
 
     def load_records(self, records: list[dict]) -> None:
         self._products = {}
         for record in records:
-            product = Product(
-                product_id=record["id"],
-                name=record["name"],
-                price=record["price"],
-                stock=record["stock"]
-            )
-            self.add_product(product)
+            self.add_product(self._create_product(record))
+
+    @staticmethod
+    def _create_product(record: dict) -> Product:
+        product_type = record.get("type")
+        if product_type == "physical":
+            return PhysicalProduct(record["id"], record["name"], record["price"],
+                                   record["stock"], record["weight"])
+        if product_type == "digital":
+            return DigitalProduct(record["id"], record["name"], record["price"],
+                                  record["stock"], record["download_size"])
+        raise ValueError(f"Unknown product type: {product_type!r}")
