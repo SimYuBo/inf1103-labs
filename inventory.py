@@ -4,13 +4,25 @@ from digital_product import DigitalProduct
 
 class Inventory:
     def __init__(self):
-        self._products: dict[str, Product] = {}
+        self._products: list[Product] = []
 
     def add_product(self, product: Product) -> None:
-        product_id = product.get_product_id()
-        if product_id in self._products:
-            raise ValueError(f"Product ID '{product_id}' already exists.")
-        self._products[product_id] = product.copy()
+        if self.find_product(product.get_product_id()) is not None:
+            raise ValueError(f"Product ID '{product.get_product_id()}' already exists.")
+        self._products.append(product.copy())
+
+    def find_product(self, product_id: str) -> Product | None:
+        for product in self._products:
+            if product.get_product_id() == product_id:
+                return product.copy()
+        return None
+
+    def remove_product(self, product_id: str) -> None:
+        product = self.find_product(product_id)
+        if product is None:
+            raise ValueError(f"Product ID '{product_id}' not found.")
+        self._products.remove(product)
+        return product.copy()
 
     def search_product(self, product_id: str) -> Product | None:
         product = self._products.get(product_id)
