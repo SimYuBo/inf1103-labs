@@ -1,0 +1,58 @@
+commit 929cb01e07c1c1fad29720d2ce14e5b1c4fe591e (HEAD -> master, origin/master, origin/HEAD)                                    
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sun Nov 8 19:25:51 2026 +0800
+
+    Final Commit
+
+commit 117201d81786b4c54e5ad1e184bf5d2b5059e7e6
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 6 15:40:26 2026 +0800
+
+:
+commit 929cb01e07c1c1fad29720d2ce14e5b1c4fe591e (HEAD -> master, origin/master, origin/HEAD)
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sun Nov 8 19:25:51 2026 +0800
+
+    Final Commit
+
+commit 117201d81786b4c54e5ad1e184bf5d2b5059e7e6
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 6 15:40:26 2026 +0800
+
+    Splitting classes into files
+
+commit 2b95b8e17fd15a2eeb990312f93b59062071f1b9
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 6 15:40:01 2026 +0800
+
+    Can be shipped class
+
+commit 32742a2894fd11bfdd55dcdf0c0b002267f1b17f
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 6 15:34:18 2026 +0800
+
+    Get fulfillment info abstract method
+
+commit 1d1916a5ee4e8f02153d3091a33a67e1d34c33a3
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 6 15:33:28 2026 +0800
+
+    Get fulfillment info method
+
+commit 8a20df82785f3418ad432c5a5b1de22c420558ac
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 6 15:22:28 2026 +0800
+
+    DigitalProduct Class Init
+
+commit 44a961fa9e8c44e6e7bc19aee701ac4a9512a07a
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 6 15:19:01 2026 +0800
+
+    PhysicalProduct Class Init
+
+commit 94bf4a43eded8652116e93b122f821eae2615404
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 6 15:13:34 2026 +0800
+
+    Lab 7 Initial Commit

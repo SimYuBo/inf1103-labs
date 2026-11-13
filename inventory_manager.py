@@ -5,6 +5,8 @@ from physical_product import PhysicalProduct
 from digital_product import DigitalProduct
 from can_be_shipped import CanBeShipped
 
+# Lab 8 Code for Inventory Management System
+
 class Main:
     def __init__(self):
         self._inventory = Inventory()
