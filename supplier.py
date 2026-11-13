@@ -12,3 +12,15 @@ class Supplier:
 
     def get_contact_email(self) -> str:
         return self._contact_email
+
+    def display_information(self) -> None:
+        print(f"Supplier ID: {self._supplier_id}")
+        print(f"Supplier Name: {self._name}")
+        print(f"Supplier Email: {self._contact_email}")
+ 
+    def to_record(self) -> dict:
+        return {
+            "id": self._supplier_id,
+            "name": self._name,
+            "contact_email": self._contact_email
+        }

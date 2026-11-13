@@ -4,6 +4,11 @@
         "name": "Laptop",
         "price": 1200.0,
         "stock": 15,
+        "supplier": {
+            "id": "S001",
+            "name": "CoolTech Pte Ltd",
+            "contact_email": "sales@cooltech.com"
+        },
         "type": "physical",
         "weight": 2.1
     },
@@ -12,6 +17,11 @@
         "name": "Mouse",
         "price": 25.5,
         "stock": 50,
+        "supplier": {
+            "id": "S001",
+            "name": "CoolTech Pte Ltd",
+            "contact_email": "sales@cooltech.com"
+        },
         "type": "physical",
         "weight": 0.1
     },
@@ -20,6 +30,11 @@
         "name": "Keyboard",
         "price": 75.0,
         "stock": 25,
+        "supplier": {
+            "id": "S001",
+            "name": "CoolTech Pte Ltd",
+            "contact_email": "sales@cooltech.com"
+        },
         "type": "physical",
         "weight": 0.8
     },
@@ -28,7 +43,38 @@
         "name": "Monitor",
         "price": 299.99,
         "stock": 10,
+        "supplier": {
+            "id": "S001",
+            "name": "CoolTech Pte Ltd",
+            "contact_email": "sales@cooltech.com"
+        },
         "type": "physical",
         "weight": 4.5
+    },
+    {
+        "id": "D001",
+        "name": "Antivirus Licence",
+        "price": 49.9,
+        "stock": 100,
+        "supplier": {
+            "id": "S002",
+            "name": "SecureSoft",
+            "contact_email": "support@securesoft.com"
+        },
+        "type": "digital",
+        "download_size": 350.0
+    },
+    {
+        "id": "D002",
+        "name": "SuperVPN",
+        "price": 50.0,
+        "stock": 500,
+        "supplier": {
+            "id": "S002",
+            "name": "SecureSoft",
+            "contact_email": "support@securesoft.com"
+        },
+        "type": "digital",
+        "download_size": 64.0
     }
 ]
