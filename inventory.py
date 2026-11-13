@@ -40,6 +40,11 @@ class Inventory:
     def display_all(self) -> tuple[Product, ...]:
         return tuple(product.copy() for product in self._products.values())
 
+    def display_all_products(self) -> None:
+        for product in self._products:
+            product.display_info()
+            print("-----------------")
+
     def to_records(self) -> list[dict]:
         return [product.to_record() for product in self._products.values()]
 
@@ -47,6 +52,10 @@ class Inventory:
         self._products = {}
         for record in records:
             self.add_product(self._create_product(record))
+
+    def show_product_details(self, product: Product) -> None:
+        product.display_information()
+        print(product.get_fulfilment_info())
 
     @staticmethod
     def _create_product(record: dict) -> Product:
