@@ -1,0 +1,41 @@
+commit df36bd4fbb174a74edbbca0897fcdc66f55e0b64 (HEAD -> master)
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Sat Nov 14 00:57:08 2026 +0800
+
+    Final Commit
+
+commit d68f1486773fc510801aefff139b8e021740066b
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 13 23:53:49 2026 +0800
+
+    Display all products
+
+commit 8ee0f4e40c93e614f8b6f925e76329837bd48147
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 13 23:48:06 2026 +0800
+
+    Order class
+
+commit 62e50e7f6643ee85096c44dd93044a65d0303602
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 13 23:43:47 2026 +0800
+
+    Order Line class
+
+commit 67ffe352a45a11dbfb7ce4b65454168f972cb10d
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 13 23:41:24 2026 +0800
+
+    Add, Find, Remove Product functions
+
+commit 3c524ec54fbdc37006504226d184da626defbae2
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 13 23:33:25 2026 +0800
+
+    Supplier Class
+
+commit 2f171ace3b56f2531f8eb62324e3b23756051cbe (origin/master, origin/HEAD)
+Author: SimYuBo <104333238+SimYuBo@users.noreply.github.com>
+Date:   Fri Nov 13 23:23:45 2026 +0800
+
+    Lab 8 Inital Commit
